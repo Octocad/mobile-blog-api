@@ -1,8 +1,9 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axiosConfig from '../config/axiosConfig';
 
 const api = axios.create({
-  baseURL: 'https://seu-backend-api.com/api', // substituir pela URL real
+  baseURL: axiosConfig.baseURL,
 });
 
 api.interceptors.request.use(

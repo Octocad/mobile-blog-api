@@ -34,10 +34,10 @@ const HomeScreen = ({ navigation }) => {
   };
 
   const renderPost = ({ item }) => (
-    <TouchableOpacity onPress={() => navigation.navigate('PostDetail', { postId: item.id })}>
+    <TouchableOpacity onPress={() => navigation.navigate('PostDetail', { postId: item._id || item.id })}>
       <Card>
         <Text style={styles.postTitle}>{item.title}</Text>
-        <Text style={styles.postAuthor}>Autor: {item.author?.name}</Text>
+        <Text style={styles.postAuthor}>Autor: {item.author?.name || item.author}</Text>
         <Text style={styles.postDescription} numberOfLines={2}>{item.content}</Text>
       </Card>
     </TouchableOpacity>
@@ -55,7 +55,7 @@ const HomeScreen = ({ navigation }) => {
       <FlatList
         data={posts}
         renderItem={renderPost}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item, index) => (item._id ? item._id.toString() : item.id ? item.id.toString() : String(index))}
       />
     </View>
   );
