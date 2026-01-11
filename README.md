@@ -2,6 +2,10 @@
 
 Aplicativo mobile desenvolvido em React Native para um sistema de blogging acadêmico, integrado com uma API RESTful.
 
+## Link do Video de Explicação do Projeto
+🔗 [Fase04_TechChallenge](https://youtu.be/e3UvEle0ZBU)
+
+
 ## 📱 Visão Geral
 
 O Mobile Blog App é uma aplicação React Native que permite:
@@ -17,6 +21,7 @@ O Mobile Blog App é uma aplicação React Native que permite:
 - ✅ Interface administrativa
 - ✅ Comentários em posts
 - ✅ Navegação intuitiva entre telas
+  
 
 ## 🚀 Setup Inicial
 
