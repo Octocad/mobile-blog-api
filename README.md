@@ -82,8 +82,6 @@ mobile-blog-api/
 │   │   └── AdminScreen.js
 │   ├── services/
 │   │   └── api.js
-│   └── utils/
-│       └── storage.js
 ├── App.js
 ├── AppNavigator.js
 ├── package.json
